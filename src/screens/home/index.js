@@ -28,12 +28,10 @@ export default function Home() {
     }
   }, []);
 
-  return !token ? (
-    <Login />
-  ) : (
+  return(
     <Router>
       <div className="main-body">
-        <Sidebar />
+        {/* <Sidebar /> */}
         <Routes>
           <Route path="/" element={<Library />} />
           <Route path="/feed" element={<Feed />} />
